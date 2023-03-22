@@ -2,52 +2,207 @@
 
 .contextLogin {
     width: 100%;
-    position: absolute;
+	height: 100vh;
+	
 }
-
+//____________________________________________________________________________________
 .areaLogin {
     background: #50C878;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.containerLogin {
+//____________________________________________________________________________________
+.formLogin {
     width: 90%;
-    text-align: center;
-    text-align: center;
     height: 45%;
-    max-width: 900px;
-    max-height: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 2rem;
-    transform: translate(-50%, -50%);
-    box-shadow: inset;
+    max-width: 800px;
+    max-height: 400px;
+    border-radius: 1rem;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
     background-color: whitesmoke;
-    box-shadow: -12px 12px 10px 0px rgba(105, 105, 105, 0.4); //[offset-x] [offset-y] [blur-radius] [spread-radius] [color];
-  }
-//____________________________________________________________________________________
-
-
-  
-//____________________________________________________________________________________
-
-  @media screen and (max-width: 768px) {
-    .containerLogin {
-      width: 100%;
-      height: auto;
-      max-width: none;
-      max-height: none;
-    }
+    transition: .4s ease-in-out;
+    box-shadow: -12px 12px 10px 0px rgba(105, 105, 105, 0.4);
+     //[offset-x] [offset-y] [blur-radius] [spread-radius] [color];
   }
 
-.textLogin {
+  .formLogin:hover{
+    transform:scale(1.05) ;
+    border: 2px solid whitesmoke;
+  }
+  @media only screen and (min-width:400px) and (max-width:800px) {
+    .formLogin{
+       width:80%;
+       height: 80%;
+   }
+       }
+//____________________________________________________________________________________
+.headerLogin{
     text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem;
+    padding-top: 15px;
+    color: rgb(0, 100, 0);
+    font-size: 1.8em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+//____________________________________________________________________________________
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(128, 128, 0, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #006400;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #006400;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
   }
 
+//____________________________________________________________________________________
+.buttonLogin {
+    position: relative;
+    outline: none;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #006400;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   .buttonLogin:hover {
+    box-shadow: 0 0 10px #50C878, 0 0 25px #006400, 0 0 50px #50C878;
+    transition-delay: 0.6s;
+   }
+   
+   .buttonLogin .spanLogin {
+    position: absolute;
+   }
+   
+   .buttonLogin .spanLogin:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #50C878);
+   }
+   
+   .buttonLogin:hover .spanLogin:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   .buttonLogin .spanLogin:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #006400);
+   }
+   
+   .buttonLogin:hover .spanLogin:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   .buttonLogin .spanLogin:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #50C878);
+   }
+   
+   .buttonLogin:hover .spanLogin:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   .buttonLogin .spanLogin:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #006400);
+   }
+   
+   .buttonLogin:hover .spanLogin:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   .buttonLogin:active {
+    background: #98FB98;
+    background: linear-gradient(to top right, #98FB98, #006400);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #50C878, 0 0 8px #006400, 0 0 8px #50C878;
+    transition: 0.1s;
+   }
+   
+   .buttonLogin:active .spanLogin:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+//__________________________________________________________________________--   
 .circlesLogin {
     position: absolute;
     top: 0;
@@ -160,3 +315,4 @@
     }
 
 }
+//____________________________________________________________________________________
