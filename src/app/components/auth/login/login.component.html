@@ -1,0 +1,52 @@
+<div class="context">
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <div class="columns is-vcentered is-centered" style="height: 100vh">
+                <div class="column is-half">
+                    <form class="box"> <!-- [formGroup]="formLogin" (ngSubmit)=Login() -->
+                        <div class="field">
+                            <label class="label">Correo</label>
+                            <div class="control"> <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
+                                <input class="input" type="email" formControlName="email" />
+                            </div>
+                        </div>
+        
+                        <div class="field">
+                            <label class="label">Contraseña</label>
+                            <div class="control"> <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
+                                <input class="input" type="password" formControlName="password" />
+                            </div>
+                        </div>
+        
+                        <div class="field">
+                            <button class="button is-fullwidth">
+                                <!-- [disabled]="!formLogin.valid" type="submit"  
+                                 [ngClass]="{'is-danger' : loginError, 'is-warning' : !loginError,
+                                 'is-loading' : loginLoading}" 
+                            -->
+                                Entrar
+                            </button>
+                            <!-- *ngIf="loginError" -->
+                            <p class="help is-danger"> <!-- {{ loginErrorMessage }} --> </p>
+                        </div>
+        
+                        <div class="field">
+                            <button class="button is-light is-fullwidth" type="button">Volver</button>
+                            <!-- (click)="goBack()" -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
