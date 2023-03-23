@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+package-lock.json
+.gitignore
+
+.gitignore
+package-lock.json
+package.json

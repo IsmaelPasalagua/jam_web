@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="profile-picture">
+      <div class="profile-picture-outer-radius"></div>
+    </div>
+    
+    <div class="infobox">
+      <p class="infobox-username" *ngIf="name">{{name}}</p>
+      <div class="">
+        <p class="align-left" *ngIf="following > 100">Following:</p><p class="align-right">{{following}}</p>  
+      </div>
+      
+      <div class="clear-float" *ngIf="following > 700">
+        <p class="align-left">Followers:</p><p class="align-right">{{followers}}</p>  
+      </div>
+    </div>
+    <div class="clear-float" *ngFor="let strength of strengths">
+        <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
+    </div>
+   
+      </div>
+  
