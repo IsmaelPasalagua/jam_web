@@ -1,0 +1,39 @@
+
+:host{
+  padding: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #50C878;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  margin: -10px;
+}
+
+.center{
+  margin-block-end: 20px;
+  padding: 2rem;
+  margin-top: -500px;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+.content{
+  text-align: justify;
+}
