@@ -1,3 +1,6 @@
+:host {
+  background: #0ecb08;
+}
 table {
     width: 100%;
     max-width: 400px;
@@ -6,18 +9,23 @@ table {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    body {
+      background-color: green;
+    }
+    
   }
   
   td {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #0ecb08;
   }
   
   label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+  
   }
   
   input[type="text"],
@@ -30,40 +38,11 @@ table {
     margin-bottom: 10px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #f2f2f2;
   }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus {
-    outline: none;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-///BOTON//  
+  ///BOTON//
   button[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    background-color: #00ccff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 0 10px #00ccff;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #008fb3;
-    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff, 0 0 80px #00ccff;
-  }
-  
-  
-  button[type="submit"] {
+    position: relative;
+    z-index: 1;
     display: block;
     margin: 0 auto;
     background-color: #333;
@@ -80,14 +59,30 @@ table {
   }
   
   button[type="submit"]:hover {
-    box-shadow: 0 0 20px rgb(0, 255, 21), 0 0 40px rgb(43, 255, 0), 0 0 80px rgb(21, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   
-  ///BOTON//
+  button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover::before {
+    height: 100%;
+  }
+  
+  ///BOY
   
   /* Estilos adicionales para la tabla */
   table thead {
-    background-color: #f2f2f2;
+    background-color: #10db3c;
   }
   
   table tbody tr:last-child td {
@@ -102,9 +97,8 @@ table {
   }
   
   /* Estilos para el formulario */
-  body {
-    background-color: #f2f2f2;
-  }
+  
+  
   
   h1 {
     text-align: center;
@@ -115,12 +109,13 @@ table {
   }
   
   form {
-    background-color: #fff;
+    background-color: #f5aeae;
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
     margin: auto;
     margin-top: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
   }
   
