@@ -4,10 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/auth/login/login.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ProfileComoponent } from './components/profile/profile.component';
+import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { RegisterComponent } from './components/register/register.component';
 
 
 const routes: Routes = [
+  {
+    path: "",
+    component: PublicacionesComponent
+  },
   {
     path: "profile",
     component: ProfileComoponent
