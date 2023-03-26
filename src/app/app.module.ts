@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { ProfileComoponent } from './components/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalComponent } from './components/modal/modal.component';
+import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComoponent,
     LoginComponent,
+    ModalComponent,
+    PublicacionesComponent
     
   ],
   imports: [
