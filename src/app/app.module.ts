@@ -12,6 +12,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -31,7 +32,9 @@ import { AcercaComponent } from './components/acerca/acerca.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent],
 
 })
