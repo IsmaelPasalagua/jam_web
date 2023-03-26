@@ -25,6 +25,15 @@ const routes: Routes = [
   path: "register",
     component: RegisterComponent
   },
+  {
+    path: "modal",
+    component: ModalComponent
+  },
+  {
+    path: "",
+    pathMatch: "full",
+    component: PublicacionesComponent
+  },
 ];
 
 

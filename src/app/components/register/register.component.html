@@ -1,23 +1,38 @@
-<div class="container">
-  <form (submit)="onSubmit($event)">
-    <table>
-      <tr>
-        <td><label for="name">Nombre:</label></td>
-        <td><input type="text" id="name" name="name"></td>
-      </tr>
-      <tr>
-        <td><label for="email">Correo electrónico:</label></td>
-        <td><input type="email" id="email" name="email"></td>
-      </tr>
-      <tr>
-        <td><label for="password">Contraseña:</label></td>
-        <td><input type="password" id="password" name="password"></td>
-      </tr>
-      <tr>
-        <td><label for="confirmPassword">Confirmar contraseña:</label></td>
-        <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
-      </tr>
-    </table>
-    <button type="submit" class="btn-register"><i class="fas fa-user-plus"></i>Registrarse</button>
-  </form>
+<div class="contextRegister">
+  <div class="areaRegister">
+    <ul class="circlesRegister">
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+      <li class="liRegister"></li>
+    </ul>
+    <form class="formRegister" (submit)="onSubmit($event)">
+      <table class="tableRegister">
+        <tr>
+          <td class="tdRegister"><label class="labelRegister" for="name">Nombre:</label></td>
+          <td class="tdRegister"><input class="inputRegister" type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td class="tdRegister"><label class="labelRegister" for="email">Correo electrónico:</label></td>
+          <td class="tdRegister"><input class="inputRegister" type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td class="tdRegister"><label class="labelRegister" for="password">Contraseña:</label></td>
+          <td class="tdRegister"><input class="inputRegister" type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td class="tdRegister"><label class="labelRegister" for="confirmPassword">Confirmar contraseña:</label></td>
+          <td class="tdRegister"><input class="inputRegister" type="password" id="confirmPassword"
+              name="confirmPassword"></td>
+        </tr>
+      </table>
+      <button type="submit" class="buttonRegister btnRegister"><i class="btnRegister iRegister"></i>Registrarse</button>
+    </form>
+  </div>
 </div>
