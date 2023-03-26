@@ -12,7 +12,7 @@
             <li class="liLogin"></li>
             <li class="liLogin"></li>
         </ul>
-        <form class="formLogin"> <!-- [formGroup]="formLogin" (ngSubmit)=Login() -->
+        <form class="formLogin" [formGroup]="formLogin" (ngSubmit)=Login()>
             <p class="headerLogin">Inicio de Sesión</p>
             <div class="input-container">
                 <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
@@ -28,8 +28,8 @@
                 <span class="input-highlight"></span>
             </div>
 
-            <button class="buttonLogin">
-                <!-- [disabled]="!formLogin.valid" type="submit"  
+            <button class="buttonLogin" [disabled]="!formLogin.valid" type="submit">
+                <!--   
                                  [ngClass]="{'is-danger' : loginError, 'is-warning' : !loginError,
                                  'is-loading' : loginLoading}" 
                     -->
