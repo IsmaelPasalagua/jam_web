@@ -33,21 +33,16 @@
                                  [ngClass]="{'is-danger' : loginError, 'is-warning' : !loginError,
                                  'is-loading' : loginLoading}" 
                     -->
-                <span class="spanLogin"></span>
-                <span class="spanLogin"></span>
-                <span class="spanLogin"></span>
                 <span class="spanLogin"></span> Entrar
             </button>
             <!-- *ngIf="loginError" -->
             <p class="help is-danger"> <!-- {{ loginErrorMessage }} --> </p>
 
-            <button class="buttonLogin">
-                <span class="spanLogin"></span>
-                <span class="spanLogin"></span>
-                <span class="spanLogin"></span>
+            <button class="buttonLogin" onClick="history.go(-1);">
                 <span class="spanLogin"></span>Volver
-            </button>
-            <!-- (click)="goBack()" -->
+            </button >
+            	
+
         </form>
     </div>
 </div>
