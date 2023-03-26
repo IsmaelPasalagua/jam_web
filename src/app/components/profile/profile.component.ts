@@ -6,29 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComoponent {
-    name = 'utvt';
-    following = 5001;
-    followers = 10002;
+    name = 'Andres Manuel Lopez Sobrador';
+    Seguidores = 850;
+    Publcaciones = 80;
   
-    strengths = [{ text: 'English', level: 'Basic' }, { text: 'HTML', level: 'High' }, { text: 'Testing', level: 'Low' }];
+    strengths = [{ text: 'Cuatrimestre', level: 'Octavo' }, { text: 'Seguidos', level: '613' }];
   
-    people = [
-      {
-        "name": "Vanessa M.",
-        "age": 16,
-        "color": 'red'
-      },
-      {
-        "name": "Carlos Angulo",
-        "age": 25,
-        "color": 'green'
-      },
-      {
-        "name": "Maleja",
-        "age": 21,
-        "color": 'pink'
-      }
-    ];
-  
+    
   }
   

@@ -1,20 +1,49 @@
+<div class="contextProfile1">
+  <div class="areaProfile">
 <div class="card">
-    <div class="profile-picture">
-      <div class="profile-picture-outer-radius"></div>
-    </div>
+<div class="profile1">Profile</div>
+  <div class="profile-picture">
+    <div class="profile-picture-outer-radius"></div>
+  </div>
+  
+  
     
-    <div class="infobox">
-      <p class="infobox-username" *ngIf="name">{{name}}</p>
-      <div class="">
-        <p class="align-left" *ngIf="following > 100">Following:</p><p class="align-right">{{following}}</p>  
-      </div>
-      
-      <div class="clear-float" *ngIf="following > 700">
-        <p class="align-left">Followers:</p><p class="align-right">{{followers}}</p>  
-      </div>
-    </div>
-    <div class="clear-float" *ngFor="let strength of strengths">
-        <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
-    </div>
-   
-      </div>
+  <div class="infobox">
+    <p class="infobox-username" *ngIf="name">{{name}}</p>
+  </div>
+  <div class="">
+    <p class="align-left" *ngIf="Seguidores > 700">Seguidores</p><p class="align-right">{{Seguidores}}</p>  
+  </div>
+  
+  <div class="clear-float" *ngIf="Seguidores > 700">
+    <p class="align-left">Publicaciones</p><p class="align-right">{{ Publcaciones}}</p>  
+  </div>
+  <div class="clear-float" *ngFor="let strength of strengths">
+    <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
+</div>
+
+<div class="center">
+<button class="buttonLogin">
+  <span class="spanLogin"></span>
+  <span class="spanLogin"></span>
+  <span class="spanLogin"></span>
+  <a href="javascript:history.back()">
+  <span class="spanLogin"></span>Volver
+</a>
+</button>
+</div>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <br>
+  <br>
+  <section class="buttons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google-plus"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+  </section>
+</div>
+</div>
+</div>
