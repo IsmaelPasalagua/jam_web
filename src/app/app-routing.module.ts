@@ -10,10 +10,6 @@ import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   {
-    path: "",
-    component: PublicacionesComponent
-  },
-  {
     path: "profile",
     component: ProfileComoponent
   },

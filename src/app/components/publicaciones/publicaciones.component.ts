@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './publicaciones.component.html',
   styleUrls: ['./publicaciones.component.scss']
 })
+
 export class PublicacionesComponent {
 
 }

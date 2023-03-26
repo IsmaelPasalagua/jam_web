@@ -8,6 +8,7 @@ import { ProfileComoponent } from './components/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalComponent } from './components/modal/modal.component';
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PublicacionesComponent } from './components/publicaciones/publicaciones
     ProfileComoponent,
     LoginComponent,
     ModalComponent,
-    PublicacionesComponent
+    PublicacionesComponent,
+    NavbarComponent
     
   ],
   imports: [
