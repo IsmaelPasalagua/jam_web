@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-  width: 300px;
+  width: 400px;
   height: 550px;
   margin: 0 auto;
   background:  #50C878;
@@ -96,6 +96,7 @@ body {
   float: left;
   text-align: center;
   color: rgb(225, 225, 225);
+  
 }
 
 .align-right {
@@ -128,6 +129,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+ 
  }
  .buttonLogin:hover {
   box-shadow: 0 0 10px #08a42a, 0 0 25px #232723, 0 0 50px #02632e;
@@ -326,7 +328,7 @@ body {
   margin: 0;
   position: absolute;
   top: 95%;
-  right: 22%;
+  right: 28%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -373,3 +375,13 @@ height: 100vh;
   justify-content: center;
   align-items: center;
 }
+//________centrado del texto
+
+  .contenedor {
+    width: 70%; /* ancho del contenedor */
+    margin: 0 auto; /* margen automático en los lados */
+  }
+ 
+
+
+  

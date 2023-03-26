@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComoponent {
-    name = 'Andres Manuel Lopez Sobrador';
+    name = 'Andres Manuel Lopez Obrador';
     Seguidores = 850;
     Publcaciones = 80;
   
-    strengths = [{ text: 'Cuatrimestre', level: 'Octavo' }, { text: 'Seguidos', level: '613' }];
+    strengths = [{ text: 'Cuatrimestre:', level: 'Octavo' }, { text: 'Seguidos:', level: '613' }];
   
     
   }
