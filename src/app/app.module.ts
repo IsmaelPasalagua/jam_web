@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModalComponent } from './components/modal/modal.component';
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AcercaComponent } from './components/acerca/acerca.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     ModalComponent,
     PublicacionesComponent,
-    NavbarComponent
+    NavbarComponent,
+    AcercaComponent
     
   ],
   imports: [
