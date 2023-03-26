@@ -11,6 +11,7 @@ import { ProfileComoponent } from './components/profile/profile.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AcercaComponent } from './components/acerca/acerca.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     ModalComponent,
     PublicacionesComponent,
-    NavbarComponent
+    NavbarComponent,
+    AcercaComponent
     
   ],
   imports: [

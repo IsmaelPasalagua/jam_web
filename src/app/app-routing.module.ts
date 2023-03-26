@@ -6,6 +6,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { ProfileComoponent } from './components/profile/profile.component';
 import { PublicacionesComponent } from './components/publicaciones/publicaciones.component';
 import { RegisterComponent } from './components/register/register.component';
+import { AcercaComponent } from './components/acerca/acerca.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
   path: "register",
     component: RegisterComponent
   },
+  {
+    path: "acerca",
+      component: AcercaComponent
+    },
   {
     path: "modal",
     component: ModalComponent

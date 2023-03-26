@@ -7,31 +7,35 @@
   </div>
   
   
-    
+  <div class="contenedor">
   <div class="infobox">
     <p class="infobox-username" *ngIf="name">{{name}}</p>
   </div>
   <div class="">
-    <p class="align-left" *ngIf="Seguidores > 700">Seguidores</p><p class="align-right">{{Seguidores}}</p>  
+    <div class="align-left" *ngIf="Seguidores > 700">Seguidores:</div>
+    <div class="align-right">{{Seguidores}}</div>  
   </div>
   
   <div class="clear-float" *ngIf="Seguidores > 700">
-    <p class="align-left">Publicaciones</p><p class="align-right">{{ Publcaciones}}</p>  
+    <p class="align-left">Publicaciones:</p><p class="align-right">{{ Publcaciones}}</p>  
   </div>
   <div class="clear-float" *ngFor="let strength of strengths">
     <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
+  </div>
 </div>
 
+
 <div class="center">
-<button class="buttonLogin">
+ <button class="buttonLogin">
+  <span class="spanLogin" ></span>
+  <a href="#" onclick="history.back()" style="color:rgb(255, 255, 255)">
   <span class="spanLogin"></span>
   <span class="spanLogin"></span>
-  <span class="spanLogin"></span>
-  <a href="javascript:history.back()">
-  <span class="spanLogin"></span>Volver
-</a>
+   <span class="spanLogin" ></span>volver
+  </a>
 </button>
 </div>
+
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,6 +48,9 @@
     <a href="#" class="fa fa-youtube"></a>
     <a href="#" class="fa fa-linkedin"></a>
   </section>
+
+  
+  
 </div>
 </div>
 </div>

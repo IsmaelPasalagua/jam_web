@@ -1,39 +1,36 @@
 
-.container-publicaciones{
-  padding: 35rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.containerGrid{
+  width: 100%;
+  margin: auto;
+  padding: 60px;
   background: #50C878;
+  flex-wrap: wrap;
+
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+}
+
+.itemGrid{
+  text-align: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  flex: 1;
+  transition: .3s all ease;
 }
 
 .card{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: white;
-  border-radius: 1rem;
-  margin: -10px;
+  border-radius: 20px;
+  margin: 280px;
+  padding: 10px;
+  flex: 1;
+  transition: .3s all ease;
 }
 
-.center{
-  margin-block-end: 20px;
-  padding: 2rem;
-  margin-top: -500px;
-  display: flex;
-  justify-content: center;
-}
-
-.title{
-  text-align: center;
-}
-
-.subtitle{
-  text-align: center;
-}
-
-.content{
-  text-align: justify;
+.card:hover{
+  flex: 2;
+  background-color: rgb(185, 205, 197);
 }
