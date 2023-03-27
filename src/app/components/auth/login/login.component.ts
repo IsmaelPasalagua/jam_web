@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Login } from 'src/app/models/auth/login';
-import { Subscription } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -14,9 +13,11 @@ import { AuthService } from 'src/app/services/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit, OnDestroy {
-  formLogin: FormGroup;
 
+export class LoginComponent implements OnInit, OnDestroy {
+
+  formLogin: FormGroup;
+  
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,

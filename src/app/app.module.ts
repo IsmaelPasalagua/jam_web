@@ -13,6 +13,7 @@ import { PublicacionesComponent } from './components/publicaciones/publicaciones
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
 import { AuthService } from './services/auth.service';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AuthService } from './services/auth.service';
     ModalComponent,
     PublicacionesComponent,
     NavbarComponent,
-    AcercaComponent
+    AcercaComponent,
+    RegisterComponent
     
   ],
   imports: [

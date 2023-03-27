@@ -12,7 +12,7 @@
       <li class="liRegister"></li>
       <li class="liRegister"></li>
     </ul>
-    <form class="formRegister" (submit)="onSubmit($event)">
+    <form class="formRegister" [formGroup]="formRegister" (ngSubmit)=Register()>
       <table class="tableRegister">
         <h2>Registro</h2>
         <tr>
@@ -35,7 +35,7 @@
       </table>
       <button type="submit" class="buttonRegister btnRegister"><i class="btnRegister iRegister"></i>Registrarse</button>
      
-      <button class="buttonBack" onClick="history.go(-1);"><span class="btnBack"></span>Volver
+      <button class="buttonBack" (click)="goBack()"><span class="btnBack"></span>Volver
 </button > 
     </form>
     
