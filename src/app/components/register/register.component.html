@@ -17,23 +17,20 @@
         <h2>Registro</h2>
         <tr>
           <td class="tdRegister"><label class="labelRegister" for="name">Nombre:</label></td>
-          <td class="tdRegister"><input class="inputRegister" type="text" id="name" name="name"></td>
+          <td class="tdRegister"><input class="inputRegister" formControlName="username" type="text" id="name" name="name"></td>
         </tr>
         <tr>
           <td class="tdRegister"><label class="labelRegister" for="email">Correo electrónico:</label></td>
-          <td class="tdRegister"><input class="inputRegister" type="email" id="email" name="email"></td>
+          <td class="tdRegister"><input class="inputRegister" formControlName="email" type="email" id="email" name="email"></td>
         </tr>
         <tr>
           <td class="tdRegister"><label class="labelRegister" for="password">Contraseña:</label></td>
-          <td class="tdRegister"><input class="inputRegister" type="password" id="password" name="password"></td>
-        </tr>
-        <tr>
-          <td class="tdRegister"><label class="labelRegister" for="confirmPassword">Confirmar contraseña:</label></td>
-          <td class="tdRegister"><input class="inputRegister" type="password" id="confirmPassword"
-              name="confirmPassword"></td>
+          <td class="tdRegister"><input class="inputRegister" formControlName="password" type="password" id="password" name="password"></td>
         </tr>
       </table>
-      <button type="submit" class="buttonRegister btnRegister"><i class="btnRegister iRegister"></i>Registrarse</button>
+      <button type="submit" class="buttonRegister btnRegister"
+      [disabled]="!formRegister.valid" type="submit"
+      ><i class="btnRegister iRegister"></i>Registrarse</button>
      
       <button class="buttonBack" (click)="goBack()"><span class="btnBack"></span>Volver
 </button > 
