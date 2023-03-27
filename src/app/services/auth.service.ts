@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   user() {
-    return this.http.post<any>(this.path + routes.auth.register, '', {
+    return this.http.post<any>(this.path + routes.auth.user, '', {
       headers: this.headers(),
     });
   }
