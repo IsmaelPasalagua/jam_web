@@ -1,56 +1,71 @@
+<app-navbar />
+
+
 <div class="contextProfile1">
   <div class="areaProfile">
 <div class="card">
-<div class="profile1">Profile</div>
   <div class="profile-picture">
     <div class="profile-picture-outer-radius"></div>
   </div>
-  
-  
+ 
+  <br>
+  <br>
   <div class="contenedor">
-  <div class="infobox">
+  <div class="infobox"> 
     <p class="infobox-username" *ngIf="name">{{name}}</p>
   </div>
-  <div class="">
-    <div class="align-left" *ngIf="Seguidores > 700">Seguidores:</div>
-    <div class="align-right">{{Seguidores}}</div>  
-  </div>
   
-  <div class="clear-float" *ngIf="Seguidores > 700">
-    <p class="align-left">Publicaciones:</p><p class="align-right">{{ Publcaciones}}</p>  
-  </div>
-  <div class="clear-float" *ngFor="let strength of strengths">
-    <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
-  </div>
-</div>
 
 
 <div class="center">
- <button class="buttonLogin">
-  <span class="spanLogin" ></span>
+ <button class="buttonprofile">
+  <span class="spanprofile" ></span>
   <a href="#" onclick="history.back()" style="color:rgb(255, 255, 255)">
-  <span class="spanLogin"></span>
-  <span class="spanLogin"></span>
-   <span class="spanLogin" ></span>volver
+  <span class="spanprofile"></span>
+  <span class="spanprofile"></span>
+   <span class="spanprofile" ></span>volver
   </a>
 </button>
 </div>
 
-
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <br>
-  <br>
-  <section class="buttons">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-google-plus"></a>
-    <a href="#" class="fa fa-youtube"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-  </section>
 </div>
 </div>
 </div>
 
 <!-- publicaciones-->
+
+<div class="itemGrid1">
+  <div class="card1 card1">
+    <div class="card-content1">
+      <div class="pub">
+        <div class="carrusel">
+          <p>Publicacion</p>
+        </div>
+          <br>
+        </div>
+      <div class="col">
+      <p class="subtitle1">Fecha de Publicacion:</p>
+      </div>
+      <div class="pub1">
+      <div class="content1">
+        Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.
+        Donec id elit non mi porta gravida at
+        eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Cras
+        mattis consectetur purus sit amet fermentum.
+      </div> 
+      <br>
+        
+        
+        
+        <!-- botones-->
+        <div class="buttonsprofile">
+          <button class="delete-btn">Eliminar</button>
+        </div>
+      </div>
+      <div class="buttonsprofile1">
+        <button class="sigui-btn1">Siguiente</button>
+      </div>
+    </div>
+      
 

@@ -1,10 +1,3 @@
-.profile1{
-  background: #006400; 
-  text-align:center;
-  color: #ffffff;
-  font-size: 1.1em;
-
-}
 
 body {
   background: #000000; 
@@ -16,39 +9,14 @@ body {
 .card {
   position: relative;
   right: 400px;
-  width: 400px;
-  height: 550px;
+  width: 300px;
+  height: 400px;
   margin: 0 auto;
   background:  #50C878;
-  border-radius: 4px;
+  border-radius: 20px;
   box-shadow: 15px 10px 9px RGB(0, 100, 0)
 }
 
-.profile-cover-container {
-  background-size: cover;
-  width: 100%;
-  height: 175x;
-  overflow: hidden;
-  float: left;
-}
-.profile-cover-container img {
-  width: 100%;
-  height: auto;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  z-index: 0;
-}
-
-.cover-overlay {
-  z-index: 1;
-  border-top-right-radius: 35%;
-  border-top-left-radius: 35%;
-  margin-top: -50px;
-  width: 100%;
-  height: 60px;
-  background: #000000;
-  position: relative;
-}
 
 .profile-picture {
   
@@ -80,38 +48,21 @@ body {
 .infobox {
   margin: 75px 35px;
   color: #fcfcfc;
-}
-.infobox p {
-  margin-top: -50px;
- 
+  
+
 }
 .infobox-username {
   font-size: 1.5em;
-  margin: -50px;
+  margin: -65px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
-.align-left {
-  float: left;
-  text-align: center;
-  color: rgb(225, 225, 225);
-  
-}
 
-.align-right {
-  float: right;
-  text-align:center;
-  color: rgb(225, 225, 225);
-}
 
-.clear-float {
-  clear: both;
-  color: rgb(225, 225, 225);
-  
-}
 
-.buttonLogin {
+//boton volver_________________________________________________
+.buttonprofile {
   position: relative;
   outline: none;
   border: 1px solid #ffffff;
@@ -131,16 +82,16 @@ body {
   font-weight: bold;
  
  }
- .buttonLogin:hover {
+ .buttonprofile:hover {
   box-shadow: 0 0 10px #08a42a, 0 0 25px #232723, 0 0 50px #02632e;
   transition-delay: 0.6s;
  }
  
- .buttonLogin .spanLogin {
+ .buttonprofile .spanLogin {
   position: absolute;
  }
  
- .buttonLogin .spanLogin:nth-child(1) {
+ .buttonprofile .spanLogin:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -148,12 +99,12 @@ body {
   background: linear-gradient(90deg, transparent, #50C878);
  }
  
- .buttonLogin:hover .spanLogin:nth-child(1) {
+ .buttonprofile:hover .spanLogin:nth-child(1) {
   left: 100%;
   transition: 0.7s;
  }
  
- .buttonLogin .spanLogin:nth-child(3) {
+ .buttonprofile .spanLogin:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -161,13 +112,13 @@ body {
   background: linear-gradient(90deg, transparent, #006400);
  }
  
- .buttonLogin:hover .spanLogin:nth-child(3) {
+ .buttonprofile:hover .spanLogin:nth-child(3) {
   right: 100%;
   transition: 0.7s;
   transition-delay: 0.35s;
  }
  
- .buttonLogin .spanLogin:nth-child(2) {
+ .buttonprofile .spanLogin:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -175,13 +126,13 @@ body {
   background: linear-gradient(180deg, transparent, #50C878);
  }
  
- .buttonLogin:hover .spanLogin:nth-child(2) {
+ .buttonprofile:hover .spanLogin:nth-child(2) {
   top: 100%;
   transition: 0.7s;
   transition-delay: 0.17s;
  }
  
- .buttonLogin .spanLogin:nth-child(4) {
+ .buttonprofile .spanLogin:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -189,13 +140,13 @@ body {
   background: linear-gradient(360deg, transparent, #006400);
  }
  
- .buttonLogin:hover .spanLogin:nth-child(4) {
+ .buttonprofile:hover .spanLogin:nth-child(4) {
   bottom: 100%;
   transition: 0.7s;
   transition-delay: 0.52s;
  }
  
- .buttonLogin:active {
+ .buttonprofile:active {
   background: #98FB98;
   background: linear-gradient(to top right, #98FB98, #006400);
   color: #bfbfbf;
@@ -203,7 +154,7 @@ body {
   transition: 0.1s;
  }
  
- .buttonLogin:active .spanLogin:nth-child(1) 
+ .buttonprofile:active .spanLogin:nth-child(1) 
  span:nth-child(2) 
  span:nth-child(2) 
  span:nth-child(2) {
@@ -211,7 +162,7 @@ body {
   transition-delay: none;
  }
 
-.circlesLogin {
+.circlesprofile {
   position: absolute;
   top: 0;
   left: 0;
@@ -220,7 +171,7 @@ body {
   overflow: hidden;
 }
 
-.circlesLogin li {
+.circlesprofile li {
   position: absolute;
   display: block;
   list-style: none;
@@ -231,14 +182,14 @@ body {
   bottom: -150px;
 }
 
-.circlesLogin li:nth-child(1) {
+.circlesprofile li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
 
-.circlesLogin li:nth-child(2) {
+.circlesprofile li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
@@ -246,14 +197,14 @@ body {
   animation-duration: 12s;
 }
 
-.circlesLogin li:nth-child(3) {
+.circlesprofile li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
 
-.circlesLogin li:nth-child(4) {
+.circlesprofile li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -261,28 +212,28 @@ body {
   animation-duration: 18s;
 }
 
-.circlesLogin li:nth-child(5) {
+.circlesprofile li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
 
-.circlesLogin li:nth-child(6) {
+.circlesprofile li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
 }
 
-.circlesLogin li:nth-child(7) {
+.circlesprofile li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
 
-.circlesLogin li:nth-child(8) {
+.circlesprofile li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
@@ -290,7 +241,7 @@ body {
   animation-duration: 45s;
 }
 
-.circlesLogin li:nth-child(9) {
+.circlesprofile li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
@@ -298,7 +249,7 @@ body {
   animation-duration: 35s;
 }
 
-.circlesLogin li:nth-child(10) {
+.circlesprofile li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
@@ -327,39 +278,13 @@ body {
 .center {
   margin: 0;
   position: absolute;
-  top: 95%;
-  right: 28%;
+  top: 80%;
+  right: 25%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 
-
-
-
-//botones de redes__________
-.buttons {
-  min-width: 200px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.buttons a {
-  text-decoration: none;
-  font-size: 12px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  background: #006400;
-  color: #f1f1f1;
-  border-radius: 60%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
-}
-.buttons a:hover {
-  transform: scale(1.2);
-}
 //___________Fondo
 .contextProfile {
   width: 200%;
@@ -380,12 +305,181 @@ height: 300vh;
   .contenedor {
     width: 70%; /* ancho del contenedor */
     margin: 0 auto; /* margen automático en los lados */
+    
   }
 
   //________Publicaciones
+
+  .pub {
+    border: 3.5px solid  #98FB98 ; 
+    background-color:#50C878  ; 
+    padding: 10px; 
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+
+
+  }
+  .pub1 {
+    border: 3.5px solid #98FB98  ; 
+    background-color:  #50C878 ; 
+    padding: 10px; 
+    height: 210px;
+    border-radius: 20px;
+    color: #fff;
+  }
+  p {
+    color: #fff;
+
+  }
+
  
-
-
-
+  .containerGrid1{
+    width: 100%;
+    margin: auto;
+    padding: 60px;
+    background: #50C878;
+    flex-wrap: wrap;
+  
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+  }
+  
+  .itemGrid1{
+    margin-top: -250px;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 1px;
+    flex: 1;
+    transition: .3s all ease;
+  }
+  
+  .card1{
+    position: relative;
+    right: -450px;
+    width:800px;
+    height: 340px;
+    margin-top: -220px;
+    background:  #006400  ;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1;
+    transition: .3s all ease;
+    box-shadow: 15px 10px 9px RGB(0, 100, 0)
+  }
+ 
+  
+  
+  .titulo{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .input-group{
+    text-align: center;
+    margin: auto;
+  }
+  .input-group-text{
+    margin-top: 5px;
+  }
+  //boton de eliminar__________________
+  .buttonsprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -14px;
+  }
 
   
+/* Estilos base del botón */
+.delete-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  
+}
+
+/* Estilos del pseudo-elemento ::before */
+.delete-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #f44336;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+}
+
+/* Estilos del botón al pasar el cursor */
+.delete-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.delete-btn:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+/* Estilos del botón al hacer clic */
+.delete-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+/* carrusel de titulo*/
+.carrusel p {
+  display: inline-block;
+  animation: desplazamiento 10s linear infinite;
+}
+
+@keyframes desplazamiento {
+  0% {
+    transform: translateX(-600);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+//boton siguiente___________________________________________
+.buttonsprofile1 {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+
+}
+
+.sigui-btn1 {
+  background-color: #1404ef; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 4px; /* Agrega bordes redondeados al botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.sigui-btn1:hover {
+  background-color: #18cede; /* Cambia el color de fondo cuando el cursor está sobre el botón */
+}
+
+
+

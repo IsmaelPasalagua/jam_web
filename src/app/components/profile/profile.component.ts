@@ -7,10 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProfileComoponent {
     name = 'Andres Manuel Lopez Obrador';
-    Seguidores = 850;
-    Publcaciones = 80;
-  
-    strengths = [{ text: 'Cuatrimestre:', level: 'Octavo' }, { text: 'Seguidos:', level: '613' }];
+    
   
     
   }
