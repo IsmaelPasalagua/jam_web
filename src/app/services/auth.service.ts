@@ -33,6 +33,9 @@ export class AuthService {
 
   setToken(token: any) {
     sessionStorage.setItem('token', token);
+    this.user().subscribe((res) => {
+      this.setUser(res);
+    });
   }
 
   getToken() {
@@ -41,9 +44,6 @@ export class AuthService {
 
   setUser(user: any) {
     sessionStorage.setItem('user', JSON.stringify(user));
-    this.user().subscribe((res) => {
-      this.setUser(res);
-    });
   }
 
   getUser() {
