@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { format } from 'date-fns';
 
 @Component({
   selector: 'app-publicaciones',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 
 export class PublicacionesComponent {
+
+  fecha = new Date();
+
+  fechaString = format(this.fecha, 'dd/MM/yyyy');
 
   openModal() {
     const modal = document.querySelector('.modal');
