@@ -6,7 +6,7 @@
     </a>
   </div>
   <!-- Inicio Modal -->
-<div class="container" [ngClass]="{ 'is-loading' : isLoading}">
+<div class="container" *ngIf="isAuth" [ngClass]="{ 'is-loading' : isLoading}">
 
   <div class="modal">
       <div class="modal-background"></div>
@@ -53,20 +53,20 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-success" href="register">
+          <a class="button is-success" href="register" *ngIf="!isAuth" >
             Registrarse
           </a>
-          <a class="button is-success" href="login" >
+          <a class="button is-success" href="login" *ngIf="!isAuth">
             Iniciar sesión 
           </a>
           <a class="button is-success" href="acerca">
             Acerca de
           </a>
-          <a class="button is-danger" (click)="logout()">
+          <a class="button is-danger" (click)="logout()" *ngIf="isAuth">
             Salir
           </a>
           <a href="profile">
-            <img src="https://c8.alamy.com/compes/2j26t31/avatar-de-usuario-femenino-imagen-de-perfil-de-aplicacion-generica-2j26t31.jpg" class="img-perfil" >
+            <img src="https://c8.alamy.com/compes/2j26t31/avatar-de-usuario-femenino-imagen-de-perfil-de-aplicacion-generica-2j26t31.jpg" class="img-perfil" *ngIf="isAuth">
           </a>
         </div>
       </div>
