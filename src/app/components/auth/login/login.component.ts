@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 import { Router } from '@angular/router';
-// import { Location } from '@angular/common';
+import { Location } from '@angular/common';
 
 import { Login } from 'src/app/models/auth/login';
 import { Subscription } from 'rxjs';
-// import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
+    private location: Location,
   ) {
     this.formLogin = formBuilder.group({
       user: ['', Validators.required],
@@ -55,6 +56,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.subRef$){
       this.subRef$.unsubscribe();
     }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }

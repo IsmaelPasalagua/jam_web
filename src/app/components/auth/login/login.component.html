@@ -38,7 +38,7 @@
             <!-- *ngIf="loginError" -->
             <p class="help is-danger"> <!-- {{ loginErrorMessage }} --> </p>
 
-            <button class="buttonLogin" onClick="history.go(-1);">
+            <button class="buttonLogin" (click)="goBack()">
                 <span class="spanLogin"></span>Volver
             </button >
             	
