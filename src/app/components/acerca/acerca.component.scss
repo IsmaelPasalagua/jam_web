@@ -1,0 +1,437 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #a532e7;
+$wizard: #d63232;
+$leo: #372f81;
+$ivan: #8f4a2f;
+$juan: #b64a89;
+$edgar: #176e23;
+$christian: #474747;
+$salome: #3a3b6e;
+$sergio: #dabb32;
+$sebas: #e61212;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.about-section {
+    
+    font: 40px/60px "Lato", Arial, sans-serif;
+    color: #9E9E9E;
+    margin-top: 0px;
+  }
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__image--barbarian {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  img {
+    width: 400px;
+    position: absolute;    
+    top: -25px;
+    left: -40px;
+  }
+}
+
+.clash-card__image--archer {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  img {
+    width: 400px;
+    position: absolute;    
+    top: -5px;
+    left: -60px;
+  }
+}
+
+.clash-card__image--giant {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  img {
+    width: 340px;
+    position: absolute;    
+    top: 30px;
+    left: 40px;
+  }
+}
+
+.clash-card__image--goblin {
+  background: url('https://w0.peakpx.com/wallpaper/461/761/HD-wallpaper-purple-blur-purple-blur-abstract-simple-background.jpg');
+  img {
+    width: 400px;
+    position: absolute;    
+    top: 67px;
+    left: 90px;
+  }
+}
+
+.clash-card__image--wizard {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  img {
+    width: 345px;
+    position: absolute;    
+    top: 70px;
+    left: -40px;
+  }
+}
+
+.clash-card__image--leo {
+    background: url('https://img.freepik.com/free-vector/blurred-background-design_1107-224.jpg?w=360');
+    img {
+      width: 145px;
+      position: absolute;    
+      top: 85px;
+      left: 100px;
+    }
+  }
+
+ 
+
+  .clash-card__image--ivan {
+    background: url('https://images2.alphacoders.com/546/546172.jpg');
+    img {
+      width: 145px;
+      position: absolute;    
+      top: 20px;
+      left: 80px;
+    }
+    
+  }
+  .clash-card__image--juan {
+    background: url('https://www.wallpaperup.com/uploads/wallpapers/2012/11/02/21173/cd4d565c7a8e5c6f919576940b4caab4.jpg');
+    img {
+      width: 225px;
+      position: absolute;    
+      top: 5px;
+      left: 75px;
+    }
+    
+  }
+  .clash-card__image--edgar {
+    background: url('https://images.unsplash.com/photo-1617957796155-72d8717ac882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JlZW4lMjBibHVycnklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    img {
+      width: 225px;
+      position: absolute;    
+      top: 25px;
+      left: 75px;
+    }
+    
+  }
+  .clash-card__image--christian {
+    background: url('https://media.pitchfork.com/photos/5931bac3d4294b0bc2dd77b1/2:1/w_648/63ce0528.jpg');
+    img {
+      width: 225px;
+      position: absolute;    
+      top: 20px;
+      left: 5px;
+    }
+    
+  }
+  .clash-card__image--salome {
+    background: url('https://i.pinimg.com/564x/ac/37/65/ac37655d5e70d2288a6e469d29dfe736.jpg');
+    img {
+      width: 145px;
+      position: absolute;    
+      top: 20px;
+      left: 5px;
+    }
+    
+  }
+  .clash-card__image--sergio {
+    background: url('https://www.publicdomainpictures.net/pictures/210000/nahled/yellow-fine-grain-background-1485817429WVD.jpg');
+    img {
+      width: 225px;
+      position: absolute;    
+      top: 50px;
+      left: 60px;
+    }
+    
+  }
+  .clash-card__image--sebas {
+    background: url('https://st2.depositphotos.com/1275255/5623/i/600/depositphotos_56236199-stock-photo-red-blur-website-abstract-luxury.jpg');
+    img {
+      width: 225px;
+      position: absolute;    
+      top: 20px;
+      left: 5px;
+    }
+    
+  }
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+
+.clash-card__level--barbarian {
+  color: $barbarian;
+}
+
+.clash-card__level--archer {
+  color: $archer;
+}
+
+.clash-card__level--giant {
+  color: $giant;
+}
+
+.clash-card__level--goblin {
+  color: $goblin;
+}
+
+.clash-card__level--wizard {
+  color: $wizard;
+}
+
+.clash-card__level--leo {
+    color: $leo;
+  }
+.clash-card__level--ivan {
+    color: $ivan;
+  }
+.clash-card__level--juan {
+    color: $juan;
+  }
+  .clash-card__level--edgar {
+    color: $edgar;
+  }
+  .clash-card__level--christian {
+    color: $christian;
+  }
+  .clash-card__level--salome {
+    color: $salome;
+  }
+  .clash-card__level--sergio {
+    color: $sergio;
+  }
+  .clash-card__level--sebas {
+    color: $sebas;
+  }
+
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+.clash-card__unit-stats--barbarian {
+  background: $barbarian;
+  
+  .one-third {
+     border-right: 1px solid #BD7C2F;
+  }
+}
+
+.clash-card__unit-stats--archer {
+  background: $archer;
+  
+  .one-third {
+     border-right: 1px solid #D04976;
+  }
+}
+
+.clash-card__unit-stats--giant {
+  background: $giant;
+  
+  .one-third {
+     border-right: 1px solid darken($giant, 8%);
+  }
+}
+
+.clash-card__unit-stats--goblin {
+  background: $goblin;
+  
+  .one-third {
+     border-right: 1px solid darken($goblin, 6%);
+  }
+}
+
+.clash-card__unit-stats--wizard {
+  background: $wizard;
+  
+  .one-third {
+     border-right: 1px solid darken($wizard, 6%);
+  }
+}
+
+.clash-card__unit-stats {
+  
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  
+  .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+  }
+  
+  sup {
+    position: absolute;
+    bottom: 4px; 
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #54aa61;
+    color: rgb(2, 1, 1);
+  }
+
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
