@@ -6,4 +6,8 @@ export const routes = {
     login: '/login',
     user: '/user',
   },
+  user: {
+    prefix: '/user',
+    username: ''
+  }
 };
