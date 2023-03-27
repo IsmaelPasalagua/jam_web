@@ -1,5 +1,3 @@
-
-
 .profile1{
   background: #006400; 
   text-align:center;
@@ -16,6 +14,8 @@ body {
 }
 
 .card {
+  position: relative;
+  right: 400px;
   width: 400px;
   height: 550px;
   margin: 0 auto;
@@ -362,8 +362,8 @@ body {
 }
 //___________Fondo
 .contextProfile {
-  width: 100%;
-height: 100vh;
+  width: 200%;
+height: 300vh;
 
 }
 
@@ -375,13 +375,17 @@ height: 100vh;
   justify-content: center;
   align-items: center;
 }
-//________centrado del texto
+//________centrado del texto de la informacion
 
   .contenedor {
     width: 70%; /* ancho del contenedor */
     margin: 0 auto; /* margen automático en los lados */
   }
+
+  //________Publicaciones
  
+
+
 
 
   
