@@ -14,52 +14,45 @@ import { AuthService } from 'src/app/services/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-
 export class LoginComponent implements OnInit, OnDestroy {
   formLogin: FormGroup;
-  subRef$: Subscription = new Subscription;
 
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
     private location: Location,
+    private authService: AuthService
   ) {
     this.formLogin = formBuilder.group({
-      user: ['', Validators.required],
-      password: ['', Validators.required]
+      username: ['', Validators.required],
+      password: ['', Validators.required],
     });
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   Login() {
     const userLogin: Login = {
-      user: this.formLogin.value.user,
+      username: this.formLogin.value.username,
       password: this.formLogin.value.password,
     };
-
-    this.subRef$ = this.http.post<Response>('url',
-      userLogin, { observe: 'response' })
-      .subscribe(res => {
-        const token = res;
-        console.log('token', token);
-        sessionStorage.setItem('token', '');
-        this.router.navigate(['/']);
-      }, err => {
-        console.log('Error en el inicio de sesión', err)
-      });
+    this.authService.login(userLogin).subscribe(
+      (res) => {
+        this.authService.setToken(res.token);
+        setTimeout(() => {
+          this.router.navigate(['/']);
+        }, 1000);
+      },
+      (err) => {
+        // console.log('error', err.error.error);
+      }
+    );
   }
 
-  ngOnDestroy() {
-    if (this.subRef$){
-      this.subRef$.unsubscribe();
-    }
-  }
+  ngOnDestroy() {}
 
   goBack(): void {
     this.location.back();
   }
-
 }

@@ -41,6 +41,9 @@ export class AuthService {
 
   setUser(user: any) {
     sessionStorage.setItem('user', JSON.stringify(user));
+    this.user().subscribe((res) => {
+      this.setUser(res);
+    });
   }
 
   getUser() {
