@@ -15,33 +15,27 @@
         <form class="formLogin" [formGroup]="formLogin" (ngSubmit)=Login()>
             <p class="headerLogin">Inicio de Sesión</p>
             <div class="input-container">
-                <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
-                <input placeholder="Correo electronico o usuario" class="input-field" type="text" formControlName="username" />
+                <input placeholder="Correo electronico o usuario" class="input-field" type="text"
+                    formControlName="username" />
                 <label for="input-field" class="input-label">Correo electronico</label>
                 <span class="input-highlight"></span>
             </div>
 
             <div class="input-container">
-                <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
                 <input placeholder="Contraseña" class="input-field" type="password" formControlName="password" />
                 <label for="input-field" class="input-label">Contraseña</label>
                 <span class="input-highlight"></span>
             </div>
 
             <button class="buttonLogin" [disabled]="!formLogin.valid" type="submit">
-                <!--   
-                                 [ngClass]="{'is-danger' : loginError, 'is-warning' : !loginError,
-                                 'is-loading' : loginLoading}" 
-                    -->
                 <span class="spanLogin"></span> Entrar
             </button>
-            <!-- *ngIf="loginError" -->
-            <p class="help is-danger"> <!-- {{ loginErrorMessage }} --> </p>
+            <p class="help is-danger"></p>
 
             <button class="buttonLogin" (click)="goBack()">
                 <span class="spanLogin"></span>Volver
-            </button >
-            	
+            </button>
+
 
         </form>
     </div>
