@@ -3,7 +3,6 @@
   width: 100%;
   margin: auto;
   padding: 60px;
-  background: #50C878;
   flex-wrap: wrap;
 
 
@@ -13,24 +12,41 @@
 }
 
 .itemGrid{
+  margin-top: -250px;
   text-align: center;
   flex-wrap: wrap;
   border-radius: 20px;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 1px;
   flex: 1;
   transition: .3s all ease;
 }
 
 .card{
   border-radius: 20px;
-  margin: 280px;
+  margin: 150px;
   padding: 10px;
+  margin-top: 250px;
+  margin-bottom: 10px;
   flex: 1;
   transition: .3s all ease;
 }
 
 .card:hover{
   flex: 2;
-  background-color: rgb(185, 205, 197);
+  background-color: rgb(62, 172, 128);
+}
+
+.titulo{
+  margin-bottom: 50px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-group{
+  text-align: center;
+  margin: auto;
+}
+.input-group-text{
+  margin-top: 5px;
 }
