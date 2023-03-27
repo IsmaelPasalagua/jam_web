@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-register',
@@ -7,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private location: Location) {}
   
   onSubmit(event: Event) {
     event.preventDefault();
@@ -42,5 +43,8 @@ export class RegisterComponent {
         alert('Error al registrar');
       }
     );
+  }
+  goBack() :void  {
+    this.location.back();
   }
 }

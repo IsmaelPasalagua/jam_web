@@ -12,11 +12,11 @@
             <li class="liLogin"></li>
             <li class="liLogin"></li>
         </ul>
-        <form class="formLogin"> <!-- [formGroup]="formLogin" (ngSubmit)=Login() -->
+        <form class="formLogin" [formGroup]="formLogin" (ngSubmit)=Login()>
             <p class="headerLogin">Inicio de Sesión</p>
             <div class="input-container">
                 <!-- [ngClass]="{ 'is-loading' : loginLoading}" -->
-                <input placeholder="Correo electronico" class="input-field" type="email" formControlName="email" />
+                <input placeholder="Correo electronico o usuario" class="input-field" type="text" formControlName="username" />
                 <label for="input-field" class="input-label">Correo electronico</label>
                 <span class="input-highlight"></span>
             </div>
@@ -28,8 +28,8 @@
                 <span class="input-highlight"></span>
             </div>
 
-            <button class="buttonLogin">
-                <!-- [disabled]="!formLogin.valid" type="submit"  
+            <button class="buttonLogin" [disabled]="!formLogin.valid" type="submit">
+                <!--   
                                  [ngClass]="{'is-danger' : loginError, 'is-warning' : !loginError,
                                  'is-loading' : loginLoading}" 
                     -->
@@ -38,7 +38,7 @@
             <!-- *ngIf="loginError" -->
             <p class="help is-danger"> <!-- {{ loginErrorMessage }} --> </p>
 
-            <button class="buttonLogin" onClick="history.go(-1);">
+            <button class="buttonLogin" (click)="goBack()">
                 <span class="spanLogin"></span>Volver
             </button >
             	

@@ -14,6 +14,7 @@
     </ul>
     <form class="formRegister" (submit)="onSubmit($event)">
       <table class="tableRegister">
+        <h2>Registro</h2>
         <tr>
           <td class="tdRegister"><label class="labelRegister" for="name">Nombre:</label></td>
           <td class="tdRegister"><input class="inputRegister" type="text" id="name" name="name"></td>
@@ -33,6 +34,10 @@
         </tr>
       </table>
       <button type="submit" class="buttonRegister btnRegister"><i class="btnRegister iRegister"></i>Registrarse</button>
+     
+      <button class="buttonBack" onClick="history.go(-1);"><span class="btnBack"></span>Volver
+</button > 
     </form>
+    
   </div>
 </div>
