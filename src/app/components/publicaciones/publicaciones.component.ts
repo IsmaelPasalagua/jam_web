@@ -8,13 +8,6 @@ import { Component } from '@angular/core';
 
 export class PublicacionesComponent {
 
-  openModal() {
-    const modal = document.querySelector('.modal');
-    modal?.classList.add('is-active');
-  }
-  closeModal() {
-    const modal = document.querySelector('.modal');
-    modal?.classList.remove('is-active');
-  }
+  
 
 }

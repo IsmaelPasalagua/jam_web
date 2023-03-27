@@ -1,49 +1,7 @@
 <app-navbar />
 
-<div class="container">
-
-  <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-          <div class="contcard">
-              <div class="card">
-                  <div class="card-content">
-                      <div class="content">
-                          <div class="field">
-                              <label class="label">Titulo</label>
-                              <div class="control">
-                                  <input class="input" type="text">
-                              </div>
-                          </div>
-
-                          <div class="field">
-                              <label class="label">Mensaje</label>
-                              <div class="control">
-                                  <textarea class="textarea"></textarea>
-                              </div>
-                          </div>
-                          <div class="field is-grouped">
-                              <div class="control">
-                                  <button class="button is-link" type="submit">Publicar</button>
-                              </div>
-                              <div class="control">
-                                  <button class="button is-link is-light" (click)="closeModal()">Cancelar</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <button class="button is-primary" (click)="openModal()">Crear nuevo post</button>
-</div>
-<!-- Fin Modal -->
 <div class="containerGrid">
   <div class="container-titulo">
-    <div class="titulo">
-      <p>FEATURED POST</p>
-    </div>
     <div class="itemGrid">
       <div class="card card1">
         <div class="card-content">
