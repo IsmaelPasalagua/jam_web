@@ -15,27 +15,29 @@
               <div class="card">
                   <div class="card-content">
                       <div class="content">
+                        <form [formGroup]="miFormularioPost" (ngSubmit)="post()">
                           <div class="field">
                               <label class="label">Titulo</label>
                               <div class="control">
-                                  <input class="input-field" placeholder="Título" type="text">
+                                  <input class="input-field" placeholder="Título" type="text" formControlName="title">
                               </div>
                           </div>
 
                           <div class="field">
-                              <label class="label">Mensaje</label>
+                              <label class="label">Resumen</label>
                               <div class="control">
-                                  <textarea class="textarea  input-field" placeholder="¿Qué tienes para decir?"></textarea>
+                                  <textarea class="textarea  input-field" placeholder="¿Qué tienes para decir?" formControlName="summary"></textarea>
                               </div>
                           </div>
                           <div class="field is-grouped">
                               <div class="control">
-                                  <button class="button is-link" type="submit">Publicar</button>
+                                  <button class="button is-link" type="submit" [disabled]="miFormularioPost.invalid">Publicar</button>
                               </div>
                               <div class="control">
-                                  <button class="button is-link is-light buttcls" (click)="closeModal()">Cancelar</button>
+                                  <button type="button" class="button is-link is-light buttcls" (click)="closeModal()">Cancelar</button>
                               </div>
                           </div>
+                        </form>
                       </div>
                   </div>
               </div>
